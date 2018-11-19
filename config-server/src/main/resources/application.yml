@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+#          uri: https://github.com/sq1990/config-repo
+           uri: ${config.repo.uri:https://github.com/sq1990/springcloud}
+           searchPaths: config-repo
+      label: master
+  profiles:
+    active: dev
+          #search-paths: config-repo
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: ${config.repo.uri: https://github.com/sq1990/springcloud}
+#          searchPaths: config-repo
+server:
+  port: 9092
+
