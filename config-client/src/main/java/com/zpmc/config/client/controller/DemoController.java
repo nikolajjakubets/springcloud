@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 	
-	@Value("${demo.env}")
+	@Value("${dev}")
 	private String env;
 
 	@GetMapping("/hello")
