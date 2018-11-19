@@ -3038,3 +3038,109 @@ Unconditional classes:
 2018-11-19 10:50:22.140 [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
 2018-11-19 10:50:22.141 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.jersey.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://eureka1:8761/eureka//apps/EUREKA-PROVIDER/10.28.160.135:eureka-provider:9090; statusCode=200
 2018-11-19 10:50:22.141 [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - DiscoveryClient_EUREKA-PROVIDER/10.28.160.135:eureka-provider:9090 - Heartbeat status: 200
+2018-11-19 10:50:51.489 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Closing connections idle longer than 30000 SECONDS
+2018-11-19 10:50:51.489 [Eureka-JerseyClient-Conn-Cleaner2] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Closing connections idle longer than 30000 SECONDS
+2018-11-19 10:50:52.149 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Get connection: {}->http://eureka1:8761, timeout = 5000
+2018-11-19 10:50:52.149 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - [{}->http://eureka1:8761] total kept alive: 2, total issued: 0, total allocated: 2 out of 200
+2018-11-19 10:50:52.149 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Getting free connection [{}->http://eureka1:8761][null]
+2018-11-19 10:50:52.149 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG o.a.h.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /eureka/apps/delta HTTP/1.1
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "GET /eureka/apps/delta HTTP/1.1[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Accept: application/json[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Name: DefaultClient[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Version: 1.4[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Id: 10.28.160.135[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Host: eureka1:8761[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "User-Agent: Java-EurekaClient/v1.9.3[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> GET /eureka/apps/delta HTTP/1.1
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Accept: application/json
+2018-11-19 10:50:52.150 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Name: DefaultClient
+2018-11-19 10:50:52.151 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Version: 1.4
+2018-11-19 10:50:52.151 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Id: 10.28.160.135
+2018-11-19 10:50:52.151 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip
+2018-11-19 10:50:52.151 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Host: eureka1:8761
+2018-11-19 10:50:52.151 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2018-11-19 10:50:52.151 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - >> User-Agent: Java-EurekaClient/v1.9.3
+2018-11-19 10:50:52.152 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Get connection: {}->http://eureka1:8761, timeout = 5000
+2018-11-19 10:50:52.153 [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - [{}->http://eureka1:8761] total kept alive: 1, total issued: 1, total allocated: 2 out of 200
+2018-11-19 10:50:52.153 [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Getting free connection [{}->http://eureka1:8761][null]
+2018-11-19 10:50:52.153 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Content-Length: 646[\r][\n]"
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "Date: Mon, 19 Nov 2018 02:51:05 GMT[\r][\n]"
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Content-Type: application/json
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Content-Length: 646
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.headers - << Date: Mon, 19 Nov 2018 02:51:05 GMT
+2018-11-19 10:50:52.155 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2018-11-19 10:50:52.156 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x0][0xed]TMo[0xe2]0[0x10][0xfd]/V[0x8f]4[0xc4][0x9][0x81][0xc0][0xa9][0x88]p@U[0x1][0xc1][0xd2]=[0xac]*[0xe4]M[0x6][0xe2]mbG[0x8e]C[0x8b]*[0xfe][0xfb][0x8e][0x93][0x86][0x16][0xca][0xb6][0xb4][0xea]qsI<~[0xf3][0xf5]f^[0x9e][0x8][0xcb][0xb2][0x84][0x87]Ls)r[0xd2]{"[0x1b]P[0xb9][0xf9]^.#H4#=B[0xdd]v[0x97]4[0xc][0x10][0x8d]1[0xcb][0xe3]PF[0x80][0xf6][0xc5]t[0xd9]ZV[0x17]u[0x4][0xd2][0xfb][0xf5]D[0x4]K[0xcd][0xf5]p1[0x1b]^[0xf7]/[0xa7][0xb3][0xc9][0xed]([0x18][0xce][0x10][0xc8]E[0xae][0x99][0x8][0xa1]D[0xd5][0x87]QdR[0xd8][0x96][0xe3][[0xb4]m[[0xd4][0xf5]zP([0xb8]g[0x97][0x99][0x92][0x1b][0x1e][0x81][0xea]u[0xed][0xae][0x8d][0xee][0xb1][0xcc][0xf5][0xb8][0x8a]}[0x80][0xaf]J8[0x9d]1[0xeb]G[0x91]:[0xe1][0x80][0xb9]u[0x91][0x97]M[0xe0]Ib[0xd3][0x8a]G[0x11][0x88][0xf9][0xde]>[0xbe][0x1e]O~[0x8e][0xf1]2[0x93]J[0x1b]b.HYH[0x83]\[0x81]`[0xbf][0x13]0ukU[0x0][0xd9]a8[0x8][0xb1][0xe6][0xe9][0xb][0xb2][0xd5]r[0xf][0x80]+[0x96][0xe4]%2[0x94][0x85][0xd0]jk[0xba][0xa6][\r][0x12]1[0xcd][0x6] 4[0xa8][0x91]XI[0xe3]{[0x15]&,7[0x5][0x84]2[0xb5][0x4][0xe8]U[0xc2][0x1f]-l[0x8f][0xe3][0xbd]5[0xaa]9[0xc3][0xc3]E[0x0]+V$:8[0xc][0xd1][0xa8][0xe9][0xbf][0xd9]N[0x1e][0x84][0xc9][0x98][0x0][0xcb][0xa1][0xe][0xaf]@[0xc0][0x3]KF[0x6][0xbf]1[0xef]9[0x84][0x98][0xcd][0xc5][0xb6][0xa2]B[0x95]3[0xac]m[0xa6]U[0x5]k[0x9e][0xeb][0xca][0xfe][0x83][0xa7][0x80][0xe9]Sd[0x9a]z-[0xc7][0xeb]z[0x9d]V[0xc7]qZ[0x98][0x81][0xe5]zV[0x5]~[0xb][0xf2][0xdb]^[0x97]b[0xab][0xb0][0xe1][0xe1]Q[0x18][0xdb][0x10][0xa7][0xd0][0xe][0x8b][0xec][0xc8][0xd1]u}[0xdb][0xf1]][0xcf][0xc1][0x6]R[0xd0][0xcc][0x10]e[0xea]O[0x99]`kH[0xb1]_[0xab][0x9a][0xb]y^[0x8e]?[0xe9]cm[0xf1]<[0x87][0xfa][0xa6][0xf3]X[0xa6]0E[0xf8]B%h[0x8e][0xb5][0xce]z[0xcd][0xe6][0xe1][0xaa][0x19][0xef][0xe6]~[0x1f][0xce][0x1][0xb3]P[0x17]LK[0xd5][0xe4][0x15][0xdd]1[0xb0]D[0xc7][0x83][0x18][0xc2][0xfb][0xb3]]+[0x1f]t[0xde]T[0xb][\n]"
+2018-11-19 10:50:52.156 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "[0xe5][0xc4][0x8f][0xd6][0x9e][0xd4]ku[0xfb]>[0x88][0xe7][0x3])U[0xc4][0x5]NI[0xac][0x3][0x9e][0x87]f[0x9d][0xb7]sd[0x16][0xd4]~[0xf5][0xaa])-2$[0x12][0xa2]Wd[0x93][0x83]Y>[0xc3][0x2][0xae][0xf4][0xf6][0x14][0xc8][0xc5][0xa7]c[0xf4]V[0x8d]r[0x9b][0x99]M[0xeb][0x7][0xc1]0 [0xbb][0xbb]][0xe3]X[0xfb][0x83][0xc9]x[0xbe][0xb8][0xf9][0x8a][0xf6]C[0xfc][0x3][0x15]i[0xa5]}[0xfa][0x9][0xed][0xbf][0xce][0xf8][0xed][0xda][0xa7][0xff][0xb5][0xff][0xa2]}[0x9f][0xfa][0x1d][0xfb][0x3][0xed][0xd7][0xa0][0xcf]i[0xef]x[0x8e][0xf6][0xe9][0x1b][0xed]{[0xde][0xf9][0xda][0xa7][0x9f][0xd1]>[0xfd][0xba][0xf6][0xe9][0x99][0xda][0xaf][0xd7][0xfe]][0xed][0xbf][0x2]}[0x93][0xf6]K[0xb6]?[0xd2]~[0xdb][0xb7]m[0xfb][0x9f][0xda][0xbf][0xdb][0xed][0xfe][0x2][0xbb]i?[\n]"
+2018-11-19 10:50:52.159 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG org.apache.http.wire -  << "L[0x8][0x0][0x0]"
+2018-11-19 10:50:52.156 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2018-11-19 10:50:52.159 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG o.a.h.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: PUT /eureka/apps/EUREKA-PROVIDER/10.28.160.135:eureka-provider:9090?status=UP&lastDirtyTimestamp=1542595733337 HTTP/1.1
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "PUT /eureka/apps/EUREKA-PROVIDER/10.28.160.135:eureka-provider:9090?status=UP&lastDirtyTimestamp=1542595733337 HTTP/1.1[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Name: DefaultClient[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Version: 1.4[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "DiscoveryIdentity-Id: 10.28.160.135[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Host: eureka1:8761[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "User-Agent: Java-EurekaClient/v1.9.3[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> PUT /eureka/apps/EUREKA-PROVIDER/10.28.160.135:eureka-provider:9090?status=UP&lastDirtyTimestamp=1542595733337 HTTP/1.1
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Name: DefaultClient
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Version: 1.4
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> DiscoveryIdentity-Id: 10.28.160.135
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Content-Length: 0
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Host: eureka1:8761
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2018-11-19 10:50:52.160 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - >> User-Agent: Java-EurekaClient/v1.9.3
+2018-11-19 10:50:52.161 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Released connection is reusable.
+2018-11-19 10:50:52.161 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Releasing connection [{}->http://eureka1:8761][null]
+2018-11-19 10:50:52.161 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Pooling connection [{}->http://eureka1:8761][null]; keep alive indefinitely
+2018-11-19 10:50:52.161 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+2018-11-19 10:50:52.161 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.util.DeserializerStringCache - clearing global-level cache with size 2
+2018-11-19 10:50:52.161 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.util.DeserializerStringCache - clearing app-level serialization cache with size 17
+2018-11-19 10:50:52.161 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG c.n.d.s.t.jersey.AbstractJerseyEurekaHttpClient - Jersey HTTP GET http://eureka1:8761/eureka//apps/delta?; statusCode=200
+2018-11-19 10:50:52.161 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_4_
+2018-11-19 10:50:52.161 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - Added instance 10.28.160.135:eureka-provider:9090 to the existing apps in region null
+2018-11-19 10:50:52.162 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - Added instance 10.28.160.135:eureka-consumer:9091 to the existing apps in region null
+2018-11-19 10:50:52.162 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 2
+2018-11-19 10:50:52.162 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 4
+2018-11-19 10:50:52.162 [DiscoveryClient-CacheRefreshExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_4_, is fetching remote regions? false 
+2018-11-19 10:50:52.162 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Content-Type: application/xml[\r][\n]"
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Content-Length: 0[\r][\n]"
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "Date: Mon, 19 Nov 2018 02:51:05 GMT[\r][\n]"
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Content-Type: application/xml
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Content-Length: 0
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.headers - << Date: Mon, 19 Nov 2018 02:51:05 GMT
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.discovery.shared.MonitoredConnectionManager - Released connection is reusable.
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Releasing connection [{}->http://eureka1:8761][null]
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Pooling connection [{}->http://eureka1:8761][null]; keep alive indefinitely
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.shared.NamedConnectionPool - Notifying no-one, there are no waiting threads
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG c.n.d.s.t.jersey.AbstractJerseyEurekaHttpClient - Jersey HTTP PUT http://eureka1:8761/eureka//apps/EUREKA-PROVIDER/10.28.160.135:eureka-provider:9090; statusCode=200
+2018-11-19 10:50:52.163 [DiscoveryClient-HeartbeatExecutor-0] DEBUG com.netflix.discovery.DiscoveryClient - DiscoveryClient_EUREKA-PROVIDER/10.28.160.135:eureka-provider:9090 - Heartbeat status: 200
