@@ -8,6 +8,14 @@ spring:
       uri: http://localhost:9092
 server:
   port: 9093
+#springcloud bus服务总线开关
 management:
-  security:
-    enabled: false
+  endpoint:
+    bus-refresh:
+      enabled: true
+    httptrace:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

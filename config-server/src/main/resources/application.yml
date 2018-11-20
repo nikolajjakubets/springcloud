@@ -1,22 +1,45 @@
 spring:
   application:
     name: config-server
+  server:
+    port: 9092
   cloud:
     config:
       server:
         git:
+           #配置git仓库地址
            uri: ${config.repo.uri:https://github.com/sq1990/springcloud}
+           #配置仓库路径
            searchPaths: config-repo
+           #username:
+           #password:
       label: master
+    bus:
+      enabled: true
+      trace:
+        enabled: true
   profiles:
     active: dev
-#动态刷新配置,guest/guest
+    #动态刷新配置,guest/guest
   rabbitmq:
-    host: localhost
-    port: 5762 # 不是web端监控中心的15672端口
-    username: guest
-    password: guest
-server:
-  port: 9092
+    host: 10.28.160.135
+    port: 5672
+    username: songqiang
+    password: 123456
 
+
+#springcloud bus服务总线开关
+management:
+  endpoint:
+    bus-refresh:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+#eureka 配置：设置服务注册中心地址，指向另一个注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/
 
