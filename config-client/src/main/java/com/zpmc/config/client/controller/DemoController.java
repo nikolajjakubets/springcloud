@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class DemoController {
 
-    @Value("${demo.env}")
-	private String env;
+    @Value("${content}")
+	private String content;
 
 	@GetMapping("/hello")
     public String hello() {
-        return "Hello! It's " + env;
+        return "Hello! Content is" + content;
     }
 }

@@ -7,6 +7,7 @@ Spring Cloud Config Server用于管理Git或SVN等配置，当其收到来自客
 | GET | http://localhost:9092/{application}/{profile}[/{label}] | 配置访问地址（变量含义见config-repo说明）|  
 | GET | http://localhost:9092/config-client/dev | 获取config-client服务的dev环境配置 |   
 
+http://localhost:9092/config-client/pre
 * 引入Maven依赖
 
 ``` maven

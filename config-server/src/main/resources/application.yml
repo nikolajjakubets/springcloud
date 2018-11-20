@@ -1,8 +1,6 @@
 spring:
   application:
     name: config-server
-  server:
-    port: 9092
   cloud:
     config:
       server:
@@ -42,4 +40,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/
+server:
+  port: 9092
 
