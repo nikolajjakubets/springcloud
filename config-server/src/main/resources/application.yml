@@ -10,6 +10,13 @@ spring:
       label: master
   profiles:
     active: dev
+#动态刷新配置,guest/guest
+  rabbitmq:
+    host: localhost
+    port: 5762 # 不是web端监控中心的15672端口
+    username: guest
+    password: guest
 server:
   port: 9092
+
 
